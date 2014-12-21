@@ -58,10 +58,10 @@ MouseTrap.sys  = 1,,
 
 ;=======================================================================================================================
 
-[DefaultInstall]
+[MouseTrap_Install]
 CopyFiles = @MouseTrap.sys
 
-[DefaultInstall.Services]
+[MouseTrap_Install.Services]
 AddService = MouseTrap, , MouseTrap_Service_Inst
 
 ;#######################################################################################################################
