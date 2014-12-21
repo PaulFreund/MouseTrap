@@ -25,19 +25,23 @@
 ;
 ;#######################################################################################################################
 
-
 [Version]
 Signature="$WINDOWS NT$"
 Class=Mouse
 ClassGUID={4D36E96F-E325-11CE-BFC1-08002BE10318}
 Provider=%ManufacturerName%
 CatalogFile=MouseTrap.cat
+DriverPackageType=ClassFilter
 DriverVer=
+
+;=======================================================================================================================
 
 [DestinationDirs]
 DefaultDestDir = 12
 
-; ================= Class section =====================
+;#######################################################################################################################
+; Class section
+;#######################################################################################################################
 
 [SourceDisksNames]
 1 = %DiskName%,,,
@@ -45,57 +49,41 @@ DefaultDestDir = 12
 [SourceDisksFiles]
 MouseTrap.sys  = 1,,
 
-;*****************************************
+;#######################################################################################################################
 ; Install Section
-;*****************************************
-
-; [DefaultInstall.NT]
-; CopyFiles=MouseTrap_Device_CopyFiles
-; AddReg = MouseTrap_Device_ClassFilter
-
-; [DefaultInstall.NT.Services]
-; AddService = MouseTrap, 0, MouseTrap_Service_Inst
+;#######################################################################################################################
 
 [Manufacturer]
-%ManufacturerName%=MouseTrapStandard,NT$ARCH$
+%ManufacturerName%=MouseTrap
 
-[MouseTrapStandard.NT$ARCH$]
-%MouseTrap.DeviceDesc%=MouseTrap_Device, Root\MouseTrap ; *PNP0FAKE
+;=======================================================================================================================
 
-[MouseTrap_Device.NT]
-CopyFiles=MouseTrap_Device_CopyFiles
-; Include=msmouse.inf
-; Needs=HID_Mouse_Inst
+[DefaultInstall]
+CopyFiles = @MouseTrap.sys
 
-[MouseTrap_Device.NT.HW]
-AddReg = MouseTrap_Device_ClassFilter
-; Include=msmouse.inf
-; Needs=HID_Mouse_Inst.HW
+[DefaultInstall.Services]
+AddService = MouseTrap, , MouseTrap_Service_Inst
 
-[MouseTrap_Device_CopyFiles]
-MouseTrap.sys
+;#######################################################################################################################
+; Service installation
+;#######################################################################################################################
 
 [MouseTrap_Device_ClassFilter]
-HKR,,"UpperFilters",0x00010008,"MouseTrap"
+HKLM, System\CurrentControlSet\Control\Class\{4D36E96F-E325-11CE-BFC1-08002BE10318}, UpperFilters, 0x00010008, "MouseTrap"
 
-;-------------- Service installation
-[MouseTrap_Device.NT.Services]
-AddService = MouseTrap, , MouseTrap_Service_Inst
-; Include=msmouse.inf
-; Needs=HID_Mouse_Inst.Services
+;=======================================================================================================================
 
-; -------------- MouseTrap driver install sections
 [MouseTrap_Service_Inst]
 DisplayName    = %MouseTrap.SVCDESC%
 ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
 StartType      = 3               ; SERVICE_DEMAND_START
 ErrorControl   = 0               ; SERVICE_ERROR_IGNORE
-LoadOrderGroup = Pointer Port
 ServiceBinary  = %12%\MouseTrap.sys
+AddReg         = MouseTrap_Device_ClassFilter
 
-;
-;--- MouseTrap_Device Coinstaller installation ------
-;
+;#######################################################################################################################
+; Coinstaller installation
+;#######################################################################################################################
 
 [DestinationDirs]
 MouseTrap_Device_CoInstaller_CopyFiles = 11
@@ -118,8 +106,14 @@ KmdfService =  MouseTrap, MouseTrap_wdfsect
 [MouseTrap_wdfsect]
 KmdfLibraryVersion = $KMDFVERSION$
 
+;#######################################################################################################################
+; Strings Section
+;#######################################################################################################################
+
 [Strings]
 ManufacturerName="PaulFreund"
 DiskName = "MouseTrap Installation"
 MouseTrap.DeviceDesc = "MouseTrap Device"
 MouseTrap.SVCDESC = "MouseTrap Service"
+
+;#######################################################################################################################
