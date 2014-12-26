@@ -232,5 +232,8 @@ lblCloseManager:
 
 lblUnload:
 	libraryUnload(hCI);
+
+	OutputMessage(_T("Press key to continue..."));
+	std::cin.get();
 	return 0;
 }

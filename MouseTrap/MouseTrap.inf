@@ -1,6 +1,6 @@
-;#######################################################################################################################
-;
-;	Copyright (c) since 2014 - Paul Freund
+; ;#######################################################################################################################
+; ;
+; ;	Copyright (c) since 2014 - Paul Freund
 ;
 ;	Permission is hereby granted, free of charge, to any person
 ;	obtaining a copy of this software and associated documentation
@@ -36,33 +36,10 @@ DriverVer=
 
 ;=======================================================================================================================
 
-[DestinationDirs]
-DefaultDestDir = 12
-
-;#######################################################################################################################
-; Class section
-;#######################################################################################################################
-
-[SourceDisksNames]
-1 = %DiskName%,,,
-
-[SourceDisksFiles]
-MouseTrap.sys  = 1,,
-
-;#######################################################################################################################
-; Install Section
-;#######################################################################################################################
-
 [Manufacturer]
 %ManufacturerName%=MouseTrap
 
 ;=======================================================================================================================
-
-[MouseTrap_Install]
-CopyFiles = @MouseTrap.sys
-
-[MouseTrap_Install.Services]
-AddService = MouseTrap, , MouseTrap_Service_Inst
 
 [MouseTrap_Install.Wdf]
 KmdfService =  MouseTrap, MouseTrap_KmdfInst
@@ -70,56 +47,9 @@ KmdfService =  MouseTrap, MouseTrap_KmdfInst
 [MouseTrap_KmdfInst]
 KmdfLibraryVersion = $KMDFVERSION$
 
-;#######################################################################################################################
-; Service installation
-;#######################################################################################################################
-
-[MouseTrap_Device_ClassFilter]
-HKLM, System\CurrentControlSet\Control\Class\{4D36E96F-E325-11CE-BFC1-08002BE10318}, UpperFilters, 0x00010008, "MouseTrap"
-
 ;=======================================================================================================================
-
-[MouseTrap_Service_Inst]
-DisplayName    = %MouseTrap.SVCDESC%
-ServiceType    = 1               ; SERVICE_KERNEL_DRIVER
-StartType      = 3               ; SERVICE_DEMAND_START
-ErrorControl   = 0               ; SERVICE_ERROR_IGNORE
-ServiceBinary  = %12%\MouseTrap.sys
-AddReg         = MouseTrap_Device_ClassFilter
-
-;#######################################################################################################################
-; Coinstaller installation
-;#######################################################################################################################
-
-; [DestinationDirs]
-; MouseTrap_Device_CoInstaller_CopyFiles = 11
-; 
-; [MouseTrap_Device.NT.CoInstallers]
-; AddReg=MouseTrap_Device_CoInstaller_AddReg
-; CopyFiles=MouseTrap_Device_CoInstaller_CopyFiles
-; 
-; [MouseTrap_Device_CoInstaller_AddReg]
-; HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
-; 
-; [MouseTrap_Device_CoInstaller_CopyFiles]
-; WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
-; 
-; [SourceDisksFiles]
-; WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1
-; 
-; [MouseTrap_Device.NT.Wdf]
-; KmdfService =  MouseTrap, MouseTrap_wdfsect
-; [MouseTrap_wdfsect]
-; KmdfLibraryVersion = $KMDFVERSION$
-
-;#######################################################################################################################
-; Strings Section
-;#######################################################################################################################
 
 [Strings]
 ManufacturerName="PaulFreund"
-DiskName = "MouseTrap Installation"
-MouseTrap.DeviceDesc = "MouseTrap Device"
-MouseTrap.SVCDESC = "MouseTrap Service"
 
 ;#######################################################################################################################
