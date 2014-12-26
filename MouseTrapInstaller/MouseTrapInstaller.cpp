@@ -122,7 +122,7 @@ void RegSetFilterList(std::vector<tstring> list) {
 
 	HKEY key;
 	RegOpenKeyEx(HKEY_LOCAL_MACHINE, PATH_MOUSECLASS, NULL, KEY_WRITE, &key);
-	RegSetValueEx(key, NAME_UPPERFILTERS, NULL, REG_MULTI_SZ, data.data(), data.size());
+	RegSetValueEx(key, NAME_UPPERFILTERS, NULL, REG_MULTI_SZ, data.data(), (DWORD)data.size());
 }
 
 struct WdfCoInstallerFunctions {
