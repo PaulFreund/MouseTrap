@@ -176,6 +176,8 @@
     <VerifyProjectOutput>True</VerifyProjectOutput>
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
+    <OutDir>$(IntDir)</OutDir>
+    <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1Release|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -189,6 +191,8 @@
     <VerifyProjectOutput>True</VerifyProjectOutput>
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
+    <OutDir>$(IntDir)</OutDir>
+    <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8Debug|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -202,6 +206,8 @@
     <VerifyProjectOutput>True</VerifyProjectOutput>
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
+    <OutDir>$(IntDir)</OutDir>
+    <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8Release|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -215,6 +221,8 @@
     <VerifyProjectOutput>True</VerifyProjectOutput>
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
+    <OutDir>$(IntDir)</OutDir>
+    <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7Debug|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -228,6 +236,8 @@
     <VerifyProjectOutput>True</VerifyProjectOutput>
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
+    <OutDir>$(IntDir)</OutDir>
+    <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7Release|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -241,6 +251,8 @@
     <VerifyProjectOutput>True</VerifyProjectOutput>
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
+    <OutDir>$(IntDir)</OutDir>
+    <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1Debug|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>

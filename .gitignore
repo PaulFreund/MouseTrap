@@ -29,3 +29,4 @@ bin/
 *.TMP
 .DS_STORE
 Win7Debug
+Win7Release

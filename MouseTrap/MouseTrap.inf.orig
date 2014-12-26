@@ -91,6 +91,28 @@ AddReg         = MouseTrap_Device_ClassFilter
 ; Coinstaller installation
 ;#######################################################################################################################
 
+<<<<<<< filter_installer
+[DestinationDirs]
+MouseTrap_Device_CoInstaller_CopyFiles = 11
+
+[MouseTrap_Device.CoInstallers]
+AddReg=MouseTrap_Device_CoInstaller_AddReg
+CopyFiles=MouseTrap_Device_CoInstaller_CopyFiles
+
+[MouseTrap_Device_CoInstaller_AddReg]
+HKR,,CoInstallers32,0x00010000, "WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll,WdfCoInstaller"
+
+[MouseTrap_Device_CoInstaller_CopyFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll
+
+[SourceDisksFiles]
+WdfCoInstaller$KMDFCOINSTALLERVERSION$.dll=1
+
+[MouseTrap_Device.NT.Wdf]
+KmdfService =  MouseTrap, MouseTrap_wdfsect
+[MouseTrap_wdfsect]
+KmdfLibraryVersion = $KMDFVERSION$
+=======
 ; [DestinationDirs]
 ; MouseTrap_Device_CoInstaller_CopyFiles = 11
 ; 
@@ -111,6 +133,7 @@ AddReg         = MouseTrap_Device_ClassFilter
 ; KmdfService =  MouseTrap, MouseTrap_wdfsect
 ; [MouseTrap_wdfsect]
 ; KmdfLibraryVersion = $KMDFVERSION$
+>>>>>>> local
 
 ;#######################################################################################################################
 ; Strings Section

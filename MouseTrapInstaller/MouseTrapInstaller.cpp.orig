@@ -5,8 +5,11 @@
 #include <iomanip>
 #include <string>
 #include <vector>
+<<<<<<< filter_installer
+=======
 #include <SetupAPI.h>
 #include <wdfinstaller.h>
+>>>>>>> local
 
 typedef std::basic_string<TCHAR> tstring;
 #if UNICODE
