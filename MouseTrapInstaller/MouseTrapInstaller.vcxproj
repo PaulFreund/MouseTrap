@@ -177,6 +177,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;F:\OpenSSL-Win32\include;F:\ZeroMQ\include;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_32\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Release|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -191,6 +193,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;F:\OpenSSL-Win32\include;F:\ZeroMQ\include;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_32\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -205,6 +209,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;F:\OpenSSL-Win32\include;F:\ZeroMQ\include;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_32\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -219,6 +225,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;F:\OpenSSL-Win32\include;F:\ZeroMQ\include;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_32\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -233,6 +241,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;F:\OpenSSL-Win32\include;F:\ZeroMQ\include;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_32\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -247,6 +257,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;F:\OpenSSL-Win32\include;F:\ZeroMQ\include;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_32\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Debug|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -261,6 +273,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_64\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Release|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -275,6 +289,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_64\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -289,6 +305,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_64\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -303,6 +321,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_64\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -317,6 +337,8 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_64\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">
     <DebuggerFlavor>DbgengKernelDebugger</DebuggerFlavor>
@@ -331,7 +353,69 @@
     <VerifyDrivers />
     <VerifyFlags>133563</VerifyFlags>
     <IncludePath>$(WinSDKRoot)Include\wdf\kmdf\$(KMDF_VER_PATH)\;F:\boost;F:\BCGSoft\BCGControlBarPro\BCGCBPro;G:\SDS2\SdShared\Include;G:\SDS3\SdShared\Include;G:\SDS2\SdOnlineGraphic\SdOlgShared\Include;G:\SDS3\SdLab\SdLabShared\Include;G:\SDS3\SdLab\SdDevice\SdDeviceShared\Include;G:\SDS3\SdQt\SdQtShared\Include;F:\Qt\5.3.1\msvc2013_64\include\QtANGLE;F:\gmock\include;F:\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(PlatformTarget)\$(ConfigurationName)\</OutDir>
+    <IntDir>$(PlatformTarget)\$(ConfigurationName)\</IntDir>
   </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|x64'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|Win32'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Debug|Win32'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|Win32'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Debug|Win32'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|Win32'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Release|Win32'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Debug|x64'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win7 Release|x64'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Debug|x64'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win8 Release|x64'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Win8.1 Release|x64'">
+    <PostBuildEvent>
+      <Command>copy Depends\MouseTrap.inf $(OutDir) &amp; copy Depends\$(PlatformTarget)\WdfCoInstaller01011.dll $(OutDir)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
   <ItemGroup>
     <FilesToPackage Include="@(Inf->'%(CopyOutput)')" Condition="'@(Inf)'!=''" />
   </ItemGroup>

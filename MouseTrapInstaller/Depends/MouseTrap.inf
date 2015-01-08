@@ -27,29 +27,11 @@
 
 [Version]
 Signature="$WINDOWS NT$"
-Class=Mouse
-ClassGUID={4D36E96F-E325-11CE-BFC1-08002BE10318}
-Provider=%ManufacturerName%
-CatalogFile=MouseTrap.cat
-DriverPackageType=ClassFilter
-DriverVer=
-
-;=======================================================================================================================
-
-[Manufacturer]
-%ManufacturerName%=MouseTrap
-
-;=======================================================================================================================
 
 [MouseTrap_Install.Wdf]
 KmdfService =  MouseTrap, MouseTrap_KmdfInst
 
 [MouseTrap_KmdfInst]
-KmdfLibraryVersion = $KMDFVERSION$
-
-;=======================================================================================================================
-
-[Strings]
-ManufacturerName="PaulFreund"
+KmdfLibraryVersion = 1.11
 
 ;#######################################################################################################################

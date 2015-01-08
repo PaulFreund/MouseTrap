@@ -19,28 +19,13 @@ typedef std::basic_string<TCHAR> tstring;
 #define NAME_COINSTALLER _T("WdfCoinstaller01011.dll")
 #define NAME_SYS _T("MouseTrap.sys")
 #define NAME_INF _T("MouseTrap.inf")
-#define NAME_INF_INSTALL _T("MouseTrap_Install")
 #define NAME_INF_WDF_INSTALL L"MouseTrap_Install.Wdf"
 #define PATH_SYS_TARGET _T("C:\\Windows\\system32\\drivers\\MouseTrap.sys")
 
 #define NAME_UPPERFILTERS _T("UpperFilters")
 #define PATH_MOUSECLASS _T("System\\CurrentControlSet\\Control\\Class\\{4D36E96F-E325-11CE-BFC1-08002BE10318}")
 
-
 DEFINE_GUID(CLASS_MOUSE, 0x4D36E96F, 0xE325, 0x11CE, 0xBF, 0xC1, 0x08, 0x00, 0x2B, 0xE1, 0x03, 0x18);
-
-/*
-	http://www.osronline.com/article.cfm?name=wdffltr_v10.zip&id=446
-	http://www.techtalkz.com/microsoft-device-drivers/262160-wdf-class-filter-driver-installation.html
-	http://msdn.microsoft.com/en-us/library/windows/hardware/ff537751(v=vs.85).aspx
-
-	I do not need to create a device as this is a filter for all devices. I might have to modify the inf to reflect the changes, but "calling" the MouseTrap_Installer key should work.
-
-	Summarized:
-	- Call CoInstaller routines
-	- Call inf installer
-	- Add UpperFilter
-*/
 
 const tstring PathSeparator = _T("\\");
 const TCHAR PathSeparatorChar = _T('\\');
@@ -217,10 +202,8 @@ int __cdecl _tmain(int argc, _TCHAR* argv[]) {
 
 		// Remove inf class
 		auto list = RegGetFilterList();
-		for(size_t idx = (list.size()-1); idx > 0; idx--) {
-			if(list[idx] == NAME_DRIVER) { 
-				list.erase(begin(list) + (idx)); 
-			}
+		for(auto it = list.begin(); it != end(list); ++it) {
+			if(*it == NAME_DRIVER) { list.erase(it); }
 		}
 		RegSetFilterList(list);
 
